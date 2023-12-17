@@ -1,2 +1,1 @@
-# notary-express
-Note taking application
+# Note Taker Starter Code
