@@ -2,7 +2,7 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
-const notes = require('./db/db.json');
+const notes = JSON.parse(fs.readFileSync('./db/db.json', 'utf8'));
 
 const app = express();
 
@@ -13,7 +13,6 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
-
 
 // confirmation for starting the server
 app.listen(PORT, () => {
@@ -32,4 +31,15 @@ app.get('/notes', (req, res) => {
 // api routes 
 app.get('/api/notes', (req, res) => res.json(notes));
 
-// TODO: POST request for when a new note is created 
+// post request for saving new notes to database
+app.post('/api/notes', (req, res) => {
+  const newNote = req.body;
+  newNote.id = notes.length + 1;
+  notes.push(newNote);
+  fs.writeFileSync('./db/db.json', newNote);
+  res.json(newNote);
+});
+
+// TODO: Make it possible to edit notes 
+
+// TODO: make it possible to delete notes 
