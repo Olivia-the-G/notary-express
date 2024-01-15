@@ -2,7 +2,6 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
-const notes = JSON.parse(fs.readFileSync('./db/db.json', 'utf8'));
 
 const app = express();
 
@@ -29,17 +28,19 @@ app.get('/notes', (req, res) => {
 });
 
 // api routes 
-app.get('/api/notes', (req, res) => res.json(notes));
+app.get('/api/notes', (req, res) => {
+  const notes = JSON.parse(fs.readFileSync('./db/db.json', 'utf8'));
+  res.json(notes);
+});
 
 // post request for saving new notes to database
 app.post('/api/notes', (req, res) => {
   const newNote = req.body;
+  const notes = JSON.parse(fs.readFileSync('./db/db.json', 'utf8'));
   newNote.id = notes.length + 1;
   notes.push(newNote);
-  fs.writeFileSync('./db/db.json', newNote);
+  fs.writeFileSync('./db/db.json', JSON.stringify(notes));
   res.json(newNote);
 });
-
-// TODO: Make it possible to edit notes 
 
 // TODO: make it possible to delete notes 
