@@ -44,3 +44,13 @@ app.post('/api/notes', (req, res) => {
 });
 
 // TODO: make it possible to delete notes 
+// app.delete('/api/notes/:id', (req, res) => {
+//   const notes = JSON.parse(fs.readFileSync('./db/db.json', 'utf8'));
+//   const noteId = req.params.id;
+//   const index = notes.findIndex(note => note.id === noteId)
+//   revNotes = notes.splice(index, 1);
+//   fs.writeFileSync('./db/db.json', JSON.stringify(notes));
+//   res.json(revNotes);
+// });
+
+// above code doesn't work properly 
