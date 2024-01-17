@@ -21,6 +21,9 @@ Making this project allowed me to learn more about http requests and communicati
 - You can then enter in your text and click the 'save note' button to save it. 
 - You can also clear your current note by clicking the 'clear form' button. 
 
+## Application
+
+Visit the launched application at the URL - 
 
 ## License
 This application is under the MIT license. To see full license details, [click here](https://opensource.org/license/mit/)
