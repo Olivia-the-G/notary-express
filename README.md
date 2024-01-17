@@ -24,7 +24,7 @@ Making this project allowed me to learn more about http requests and communicati
 
 ## Application
 
-Visit the launched application at the URL - 
+Visit the launched application at the URL - https://floating-lowlands-42980-b282d39f2668.herokuapp.com/
 
 ## License
 This application is under the MIT license. To see full license details, [click here](https://opensource.org/license/mit/)
