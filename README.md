@@ -1,9 +1,9 @@
 # Notary.Express [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square&link=https%3A%2F%2Fopensource.org%2Flicense%2Fmit%2F)](https://opensource.org/license/mit/)
 
 ## Description 
-This is a note taking application that has fields for a note and a title, and allows you to save notes for future use. 
+This is a **note taking application** that has fields for a note and a title, and allows you to **save notes for future use**. 
 
-This application uses express.js and is deployed on Heroku. 
+This application uses **express.js** and is **deployed on Heroku**. 
 
 Making this project allowed me to learn more about http requests and communicating with the server which helps me on my way to becoming more skilled in back-end development. 
 
