@@ -16,7 +16,8 @@ Making this project allowed me to learn more about http requests and communicati
 
 ## Usage
 
-![Note Taker app](https://github.com/Olivia-the-G/notary-express/assets/130778807/65250bad-4840-4f29-a1b1-b43c9066b8c8)
+![Note Taker app](https://github.com/Olivia-the-G/notary-express/assets/130778807/cff8f190-0e96-447e-97d8-a03734635eaa)
+
 
 - Using the app you can create new notes with the 'new note' button. 
 - You can then enter in your text and click the 'save note' button to save it. 
