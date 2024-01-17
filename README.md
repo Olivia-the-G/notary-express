@@ -10,6 +10,7 @@ Making this project allowed me to learn more about http requests and communicati
 ## Table of Contents
 
 - [Usage](#usage)
+- [Application](#application)
 - [License](#license)
 - [Contact](#contact)
 
